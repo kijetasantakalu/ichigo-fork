@@ -1,5 +1,5 @@
-#let logo_path = "./res/PKU.svg"
-#let logo_str = read(logo_path).replace("920f14", "cccccc")
+// #let logo_path = "./res/PKU.svg"
+// #let logo_str = read(logo_path).replace("920f14", "cccccc")
 
 #let theme(meta) = {
   return (
@@ -8,14 +8,14 @@
         return [
           #set page(margin: 0pt, header: none, footer: none)
 
-          // Logo
-          #place(
-            center + top,
-            dx: 40%,
-            dy: 10pt,
-          )[
-            #image.decode(logo_str, width: 100%)
-          ]
+          // // Logo
+          // #place(
+          //   center + top,
+          //   dx: 40%,
+          //   dy: 10pt,
+          // )[
+          //   #image.decode(logo_str, width: 100%)
+          // ]
 
           // Info panel
           #place(
@@ -132,3 +132,5 @@
     ),
   )
 }
+
+
